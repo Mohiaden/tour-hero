@@ -1,38 +1,54 @@
-.container{
-    background-color: lightslategrey;
-    margin: 5px;
-    padding: 5px;
-    width: 19rem;
-}
-
-
-.card {
-    margin-bottom: 15px;
-}
-.h2selectHero {
-    color: green;
-}
-
-.dselectId {
-    color: rgb(150, 140, 240);
-}
-
-div>.section1 {
-    
-   color: rgb(211, 99, 24);
+/* HeroesComponent's private CSS styles */
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  .heroes li.selected {
+    background-color: black;
+    color: white;
+  }
+  .heroes li.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  .heroes li.selected:active {
+    background-color: black;
+    color: white;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.9em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
   
-}
-    
-div>section2 {
-    color: rgb(187, 221, 125);
-}
-    
+  input {
+    padding: .5rem;
+  }
 
-li {
-    list-style:none;
-}
-
-.label1 {
-    background-color: rgb(163, 162, 150);
-    color: rgb(236, 233, 228);
-}
+ 
