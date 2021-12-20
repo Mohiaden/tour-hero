@@ -1,19 +1,32 @@
+.container{
+    background-color: lightslategrey;
+    margin: 5px;
+    padding: 5px;
+    width: 19rem;
+}
 
 
+.card {
+    margin-bottom: 15px;
+}
 .h2selectHero {
     color: green;
 }
 
 .dselectId {
-    color: rgb(42, 42, 228);
+    color: rgb(150, 140, 240);
 }
 
-.section1 {
-    background-color: rgb(241, 167, 167);
+div>.section1 {
+    
+   color: rgb(211, 99, 24);
+  
 }
-.section2 {
-    background-color: rgb(200, 219, 224);
+    
+div>section2 {
+    color: rgb(187, 221, 125);
 }
+    
 
 li {
     list-style:none;

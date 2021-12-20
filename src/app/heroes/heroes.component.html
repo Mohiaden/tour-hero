@@ -13,9 +13,9 @@
   </div>
 
 </div>
-</section>
 
-<section class="section2">
+
+<div class="section2">
 <ul class="listHero">
 <li *ngFor="let hero of heroes"
   [class.selected]="hero === selectedHero"
@@ -23,7 +23,43 @@
   <span class="badge">{{hero.id}}</span> {{hero.name}}
 </li>
 </ul>
+</div>
+    </section>
+
+    
+</div>
+</div>
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <div class="section1">
+<section >
+<div *ngIf="selectedHero">
+  
+<h2 class="h2selectHero">{{selectedHero.name | uppercase}} Details</h2>
+  <div class="dselectId"> <h1> <span>id: </span>   {{selectedHero.id}}</h1></div>
+  
+  <div class="label1">
+  <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+  </div>
+
+</div>
 </section>
+</div>
+<div class="section2">
+<section >
+<div>
+<ul class="listHero">
+<li *ngFor="let hero of heroes"
+  [class.selected]="hero === selectedHero"
+  (click)="onSelect(hero)">
+  <span class="badge">{{hero.id}}</span> {{hero.name}}
+</li>
+</ul>
+</div>
+    </section>
+  </div>
+
     
 </div>
 </div>
