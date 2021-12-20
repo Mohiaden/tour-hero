@@ -1,15 +1,20 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    
 <section class="section1">
 <div *ngIf="selectedHero">
   
 <h2 class="h2selectHero">{{selectedHero.name | uppercase}} Details</h2>
   <div class="dselectId"> <h1> <span>id: </span>   {{selectedHero.id}}</h1></div>
-  <div>
-    <label for="hero-name">Hero name: </label>
+  
+  <div class="label1">
+  <label for="hero-name">Hero name: </label>
     <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
   </div>
 
 </div>
 </section>
+
 <section class="section2">
 <ul class="listHero">
 <li *ngFor="let hero of heroes"
@@ -19,3 +24,6 @@
 </li>
 </ul>
 </section>
+    
+</div>
+</div>
